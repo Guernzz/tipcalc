@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class = "tipcalc"></p>
+    <script>
+        var billInput = prompt("How much was your bill? : ");
+        billInput = parseFloat(billInput);
+        var taxTotal = billInput + (billInput * 7/100);
+        var tipTotal = taxTotal + (taxTotal * 5/100);
+        tipTotal = tipTotal.toFixed(2);
+ 
+        alert("Your total is " + tipTotal + " with a 7% tax and a 5% tip.");
+    </script>
+</body>
+</html>
